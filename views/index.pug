@@ -1,0 +1,35 @@
+doctype html
+html
+
+  head
+    meta(charset='UTF-8')
+    link(href='https://fonts.googleapis.com/css?family=Philosopher:700', rel='stylesheet')
+    link(href='/reveal/dist/reset.css', rel='stylesheet')
+    link(href='/reveal/dist/reveal.css', rel='stylesheet')
+    link(href='/public/reveal-theme.css', rel='stylesheet')
+    link(href='/public/reveal-code.css', rel='stylesheet')
+    //- link(href='/reveal/lib/css/zenburn.css', rel='stylesheet')
+    //- link(href='/reveal/dist/theme/solarized.css', rel='stylesheet')
+    link(href='/public/utils.css', rel='stylesheet')
+  body
+    div.reveal
+      div.slides
+        section(data-markdown=slides, data-separator-vertical="^--")
+   
+    script(src='/reveal/dist/reveal.js')
+    script(src='/reveal/plugin/markdown/markdown.js')
+    script(src='/reveal/plugin/highlight/highlight.js')
+    script(src='/reveal/plugin/zoom/zoom.js')
+  
+    script Reveal.initialize({
+      |      progress: true,
+      |      center: true,
+      |      slideNumber: true,
+      |      embedded: true,
+      |      width: 900,
+      |      height: 650,
+      |      minScale: 0.7,
+      |      maxScale: 1,
+      |      transition: 'slide',
+      |      plugins: [ RevealMarkdown, RevealHighlight ]
+      |    });

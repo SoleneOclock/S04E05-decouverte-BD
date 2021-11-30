@@ -1,0 +1,94 @@
+/* UTILS */
+body {
+  background-color: #f9f9f9;
+}
+
+/* bugfix revealJS4 non affiché */
+.reveal {
+  height: 100vh;
+}
+
+.small {
+  font-size: .6em
+}
+
+p {
+  font-size: .8em
+}
+code {
+  font-size: .9em;
+  background: rgba(0,0,0,.1);
+  color: #abb2bf;
+}
+
+/* p > code {
+  font-size: .8em;
+  background: rgba(0,0,0,.1);
+} */
+
+pre > code {
+  font-size: 1em;
+  /* background-color: #586e75; */
+  /* background-color: #36474d; */
+  background-color: #273545;
+  /* background-color: #fff; */
+}
+
+
+
+blockquote p {
+  font-size: .7em;
+}
+
+.reveal section img {
+  box-shadow: none;
+  border: none;
+  background-color: transparent;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-family: 'Philosopher', sans-serif;
+  text-transform: initial;
+  color: black;
+}
+.reveal h1 {
+  font-size: 2.5em;
+}
+.reveal h2 {
+  font-size: 2em;
+}
+.reveal h3 {
+  font-size: 1.4em;
+}
+.reveal h4 {
+  font-size: 1.2em;
+  font-family: 'Philosopher', sans-serif;
+  text-transform: initial;
+  /* font-style: italic */
+}
+.reveal table:not(.hljs-ln) {
+  font-size: .8em;
+}
+.reveal table:not(.hljs-ln) td, .reveal table:not(.hljs-ln) th {
+
+  text-align: center;
+}
+.reveal table:not(.hljs-ln) th {
+  color: black;
+  font-size: .8em;
+  border-bottom: 3px solid;
+}
+
+.reveal table:not(.hljs-ln) td {
+  padding: .5em;
+  font-size: .7em;
+}
+
+.reveal ul {
+  font-size: 0.7em;
+}
+
+/* Gestion in and out */
+.reveal .slides section .fragment.fade-in-then-out {
+  position: absolute;
+}

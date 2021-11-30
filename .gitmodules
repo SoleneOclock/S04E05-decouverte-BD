@@ -1,0 +1,44 @@
+[submodule "slides/S08E05-slides-adminsys"]
+	path = slides/S08E05-slides-adminsys
+	url = git@github.com:O-clock-Teach/S08E05-slides-adminsys.git
+
+[submodule "slides/S04E05-slides-db"]
+	path = slides/S04E05-slides-db
+	url = git@github.com:O-clock-Teach/S04E05-slides-db.git
+
+[submodule "slides/S01E01-slides-intro"]
+	path = slides/S01E01-slides-intro
+	url = git@github.com:O-clock-Teach/S01E01-slides-intro.git
+[submodule "slides/S03E01-slides-js"]
+	path = slides/S03E01-slides-js
+	url = git@github.com:O-clock-Teach/S03E01-slides-js.git
+[submodule "slides/AuraHB-Linux01"]
+	path = slides/AuraHB-Linux01
+	url = git@github.com:Human-Booster-Aura/Linux-E01-slides.git
+[submodule "slides/AuraHB-Linux02"]
+	path = slides/AuraHB-Linux02
+	url = git@github.com:Human-Booster-Aura/Linux-E02-slides.git
+[submodule "slides/S08-Presentation-Symfony"]
+	path = slides/S08-Presentation-Symfony
+	url = git@github.com:O-clock-Spe-Symfony/Slides-S08-presentation.git
+[submodule "slides/S08E01-slides-wp"]
+	path = slides/S08E01-slides-wp
+	url = git@github.com:O-clock-Teach/S08E01-slides-wp
+[submodule "slides/journee-pro-cockpit-certifications"]
+	path = slides/journee-pro-cockpit-certifications
+	url = git@github.com:O-clock-Teach/journee-pro-cockpit-certifications.git
+[submodule "slides/TP-soutenance"]
+	path = slides/TP-soutenance
+	url = git@github.com:O-clock-Teach/TP-soutenance.git
+[submodule "slides/TP-Preparation"]
+	path = slides/TP-Preparation
+	url = git@github.com:O-clock-Teach/TP-Preparation.git
+[submodule "slides/Slides-Apotheose"]
+	path = slides/Slides-Apotheose
+	url = git@github.com:O-clock-Teach/Slides-Apotheose.git
+[submodule "slides/intro-cda"]
+	path = slides/intro-cda
+	url = git@github.com:O-clock-Teach/intro-cda.git
+[submodule "slides/cda-gestion-projet"]
+	path = slides/cda-gestion-projet
+	url = git@github.com:O-clock-Teach/cda-gestion-projet-slides.git

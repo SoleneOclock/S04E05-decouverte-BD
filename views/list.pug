@@ -1,0 +1,14 @@
+doctype html
+
+html
+  head
+    link(href='/public/reset.css', rel='stylesheet')
+    link(href='/public/styles.css', rel='stylesheet')
+  body#list
+    div#viewer
+      h1 Visionneuse
+      h2 Listing des fichiers disponibles
+      ul
+        each fileMd in list
+          li
+            a(href=fileMd)= fileMd

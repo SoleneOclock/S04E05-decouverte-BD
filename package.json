@@ -1,0 +1,14 @@
+{
+  "name": "slides-fs-js",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": ">=4.17.1",
+    "glob": ">=7.1.6",
+    "pug": ">=3.0.0",
+    "reveal.js": ">=3.8.0"
+  }
+}
