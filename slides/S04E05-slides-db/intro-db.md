@@ -1,6 +1,7 @@
 # Bases de données & PHP
 
-SQL, MySQL, Adminer, PDO
+MySQL, SQL, Adminer, PDO
+
 
 ---
 
@@ -20,38 +21,14 @@ SQL, MySQL, Adminer, PDO
 
 ![image](/slides/S04E05-slides-db/img/saison4.png)
 
----
-
-## Programme
-
-<p class="fragment"><em>Qu'est ce qu'une base de données?</em></p>
-<p class="fragment"><strong>MySQL et Adminer</strong></p>
-<p class="fragment"><em>Manipuler les bases de données</em></p>
-<p class="fragment"><strong>le langage SQL</strong></p>
-<p class="fragment"><strong>PHP, librairie PDO</strong></p>
 
 ---
 
-## A quoi servent les bases de données ?
 
-<ul>
-    <li class="fragment">
-        <strong>stocker, archiver</strong><br>
-        <small><em class="fragment">logs, temps réel</em></small>
-    </li>
-    <li class="fragment">
-        <strong>manipuler, gérer</strong><br>
-        <small><em class="fragment">boutique, stocks</em></small>
-    </li>
-    <li class="fragment">
-        <strong>partager des données</strong><br>
-        <small><em class="fragment">API, côté serveur</em></small>
-    </li>
-</ul>
+## Qu'est ce que c'est une base de données ?
 
----
 
-## Comment structurer les données ?
+<p class="fragment">Un ensemble organisé d'informations plus ou moins structurée.</p>
 
 --
 
@@ -73,51 +50,81 @@ SQL, MySQL, Adminer, PDO
 
 ![image](/slides/S04E05-slides-db/img/tables.png)
 
---
-
-![image](/slides/S04E05-slides-db/img/mysql.png)
 
 ---
 
+## Et ces données on va en faire quoi ?
+
+
+<ul>
+    <li class="fragment">
+        <strong>les stocker, les archiver</strong><br>
+        <small><em class="fragment">logs, temps réel</em></small>
+    </li>
+    <li class="fragment">
+        <strong>les manipuler, les gérer</strong><br>
+        <small><em class="fragment">boutique, stocks</em></small>
+    </li>
+    <li class="fragment">
+        <strong>les partager</strong><br>
+        <small><em class="fragment">API, côté serveur</em></small>
+    </li>
+</ul>
+
+
+---
+
+
+## SGBD
+
+
+<p>Logiciel intermédiaire entre les utilisateurs et les bases de données. C'est lui qui permet de stocker, manipuler et lire les données.</p>
+
+<ul>
+<li>SGBD de type SQL (PostgreSQL, SQLite, Microsoft SQL Server, Oracle)</li>
+<li>SGBD de type NoSQL (Cassandra, Redis, MongoDB)</li>
+<ul>
+
+
+---
+
+
 ## MySQL
 
-<p>Système de gestion de bases de données relationnelles</p>
+<p>MySql est un système de gestion de bases de données relationnelles</p>
 
---
+<ul class="fragment">
+	<li>Logiciel Open Source</li>
+	<li>Utilise le langage SQL pour communiquer avec le moteur de base de données</li>
+	<li>Interface web: Adminer (ou PhpMyAdmin)</li>
+	<li>Librairie PHP: PDO</li>
+</ul>
 
-- Open Source
-- Bases de données relationnelles: SQL
-- Interface web: Adminer (ou PhpMyAdmin)
-- Librairie PHP: PDO
 
 ---
 
 ## SQL
 
-<p>Langage permettant de communiquer avec un moteur de base de données</p>
-
--- 
-
-<p>Communiquer pour dire quoi ?</p>
+<p>Langage de communication</p>
 
 <ul>
 <li class="fragment left">
-	Pour gérer les accès à la base de données : utilisateurs, autorisations<br>
+	gérer les accès à la base de données : utilisateurs, autorisations<br>
 	Data <strong>Control</strong> Language (DCL)<br>
 	<small><code>[GRANT, REVOKE]</code></small>
 </li>
 <li class="fragment left">
-	Pour définir la structure de base de données : créer, modifier supprimer les tables.<br>
+	définir la structure de base de données : créer, modifier supprimer les tables.<br>
 	Data <strong>Definition</strong> Language (DDL)<br>
 	<small><code>[CREATE, DROP, ALTER, TRUNCATE]</code></small>
 </li>
 <li class="fragment left">
-	Pour lire les données<br>
+	lire les données<br>
 	Data <strong>Query</strong> Language (DQL)<br>
 	<small><code>[SELECT]</code></small>
 </li>
 <li class="fragment left">
-	Pour manipuler les données : creer, modifier, supprimer les données<br>
+	manipuler les données : creer, modifier, supprimer les données<br>
 	Data <strong>Manipulation</strong> Language (DML)<br>
 	<small><code>[INSERT, UPDATE, DELETE]</code></small>
 </li>
@@ -125,7 +132,7 @@ SQL, MySQL, Adminer, PDO
 
 ---
 
-## Concrètement, c'est quoi alors une base de données relationnelles?
+## Concrètement, une base de données ça ressemble à quoi ?
 
 ---
 
