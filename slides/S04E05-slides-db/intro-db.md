@@ -28,7 +28,11 @@ MySQL, SQL, Adminer, PDO
 ## Qu'est ce que c'est une base de données ?
 
 
-<p class="fragment">Un ensemble organisé d'informations plus ou moins structurée.</p>
+<p class="fragment">Un ensemble organisé d'informations plus ou moins structurées.</p>
+
+--
+
+## Structurées comment ?
 
 --
 
@@ -36,54 +40,21 @@ MySQL, SQL, Adminer, PDO
 
 --
 
+#### Données organisés par graph
+
 ![image](/slides/S04E05-slides-db/img/graph.png)
 
 --
 
-### 1 seul Document
+#### Données organisés par documents
 
-![image](/slides/S04E05-slides-db/img/keyvalue.png)
+![image](/slides/S04E05-slides-db/img/article-nosql.png)
 
 --
 
-### Données séparées, mais liées
+#### Données organisées par relations
 
-![image](/slides/S04E05-slides-db/img/tables.png)
-
-
----
-
-## Et ces données on va en faire quoi ?
-
-
-<ul>
-    <li class="fragment">
-        <strong>les stocker, les archiver</strong><br>
-        <small><em class="fragment">logs, temps réel</em></small>
-    </li>
-    <li class="fragment">
-        <strong>les manipuler, les gérer</strong><br>
-        <small><em class="fragment">boutique, stocks</em></small>
-    </li>
-    <li class="fragment">
-        <strong>les partager</strong><br>
-        <small><em class="fragment">API, côté serveur</em></small>
-    </li>
-</ul>
-
-
----
-
-
-## SGBD
-
-
-<p>Logiciel intermédiaire entre les utilisateurs et les bases de données. C'est lui qui permet de stocker, manipuler et lire les données.</p>
-
-<ul>
-<li>SGBD de type SQL (PostgreSQL, SQLite, Microsoft SQL Server, Oracle)</li>
-<li>SGBD de type NoSQL (Cassandra, Redis, MongoDB)</li>
-<ul>
+![image](/slides/S04E05-slides-db/img/article-sql.png)
 
 
 ---
@@ -91,13 +62,15 @@ MySQL, SQL, Adminer, PDO
 
 ## MySQL
 
-<p>MySql est un système de gestion de bases de données relationnelles</p>
+<p>Système de gestion de bases de données relationnelles</p>
 
-<ul class="fragment">
-	<li>Logiciel Open Source</li>
-	<li>Utilise le langage SQL pour communiquer avec le moteur de base de données</li>
-	<li>Interface web: Adminer (ou PhpMyAdmin)</li>
-	<li>Librairie PHP: PDO</li>
+--
+
+<ul>
+	<li>SGBD Open Source</li>
+	<li>Langage : SQL</li>
+	<li>Interface web : Adminer (ou PhpMyAdmin)</li>
+	<li>Librairie PHP : PDO</li>
 </ul>
 
 
@@ -107,26 +80,28 @@ MySQL, SQL, Adminer, PDO
 
 <p>Langage de communication</p>
 
+--
+
 <ul>
-<li class="fragment left">
-	gérer les accès à la base de données : utilisateurs, autorisations<br>
-	Data <strong>Control</strong> Language (DCL)<br>
-	<small><code>[GRANT, REVOKE]</code></small>
-</li>
-<li class="fragment left">
-	définir la structure de base de données : créer, modifier supprimer les tables.<br>
-	Data <strong>Definition</strong> Language (DDL)<br>
+<li>
+	Data <strong>Definition</strong> Language <br>
+	-> définir la structure de base de données<br>
 	<small><code>[CREATE, DROP, ALTER, TRUNCATE]</code></small>
 </li>
 <li class="fragment left">
-	lire les données<br>
-	Data <strong>Query</strong> Language (DQL)<br>
+	Data <strong>Manipulation</strong> Language<br>
+    -> manipuler (ajouter, modifier, supprimer) les données<br>	
+	<small><code>[INSERT, UPDATE, DELETE]</code></small>
+</li>
+<li class="fragment left">
+	Data <strong>Query</strong> Language<br>
+	-> lire les données<br>
 	<small><code>[SELECT]</code></small>
 </li>
 <li class="fragment left">
-	manipuler les données : creer, modifier, supprimer les données<br>
-	Data <strong>Manipulation</strong> Language (DML)<br>
-	<small><code>[INSERT, UPDATE, DELETE]</code></small>
+	Data <strong>Control</strong> Language <br>
+	-> gérer les accès à la base de données : utilisateurs, autorisations<br>
+	<small><code>[GRANT, REVOKE]</code></small>
 </li>
 </ul>
 
@@ -139,8 +114,8 @@ MySQL, SQL, Adminer, PDO
 ## Une structure de données
 
 <p>Par exemple pour stocker des profs O'Clock </p>
-<table class="small">
-    <thead class="fragment">
+<table class="small" class="fragment">
+    <thead>
         <th>Nom</th>
         <th>Prenom</th>
         <th>Email</th>
