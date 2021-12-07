@@ -47,7 +47,7 @@ MySQL, SQL, Adminer, PDO
 
 ## Comment ?
 
-<p class="fragment">Différement suivant le <strong>SGBD</strong><br /><br />
+<p class="fragment">Avec un <strong>SGBD</strong><br /><br />
 Système de Gestion de Base de Données<br />
 (DBMS: DataBase Management System)</p>
 
@@ -84,19 +84,7 @@ PostgreSQL, SQLite, Microsoft SQL Server, Oracle
 
 ---
 
-## MySQL
-
-<ul>
-	<li>Système de gestion de bases de données relationnelles</li>
-	<li>SGBD Open Source</li>
-	<li>Langage : SQL</li>
-	<li>Interface web : Adminer (ou PhpMyAdmin)</li>
-	<li>Librairie PHP : PDO</li>
-</ul>
-
---
-
-## Concrètement
+## Principes des SGBDR
 
 <ul>
     <li>un serveur contient des bases</li>
@@ -112,9 +100,19 @@ PostgreSQL, SQLite, Microsoft SQL Server, Oracle
 <ul class="fragment">
     <li>Chaque ligne doit être unique</li>
     <li>Et possède un identifiant</li>
-    <li>Pas de répétitions</li>
 </ul>
 
+---
+
+## MySQL
+
+<ul>
+	<li>Système de gestion de bases de données relationnelles</li>
+	<li>SGBD Open Source</li>
+	<li>Langage : SQL</li>
+	<li>Interface web : Adminer (ou PhpMyAdmin)</li>
+	<li>Librairie PHP : PDO</li>
+</ul>
 
 ---
 
@@ -147,8 +145,4 @@ PostgreSQL, SQLite, Microsoft SQL Server, Oracle
 </li>
 </ul>
 
----
 
-## La théorie c'est bien
-
-<p class="fragment">mais la pratique c'est mieux !</p>
