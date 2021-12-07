@@ -1,4 +1,4 @@
-# Bases de données & PHP
+# Bases de données
 
 MySQL, SQL, Adminer, PDO
 
@@ -25,24 +25,35 @@ MySQL, SQL, Adminer, PDO
 ---
 
 
-## Qu'est ce que c'est une base de données ?
+## Qu'est ce que c'est une BDD ?
 
 
-<p class="fragment">Un ensemble organisé d'informations plus ou moins structurées.</p>
+<p class="fragment">Un ensemble organisé d'informations</p>
+<ul class="fragment">
+    <li>plus ou moins structurées</li>
+	<li>un service indépendant</li>
+	<li>sur un serveur</li>
+	<li>avec une interface pour dialoguer</li>
+</ul>
 
---
+---
 
-## Structurées comment ?
+## A quoi ça sert ?
+
+
+<p class="fragment">A stocker, organiser, gerer et renvoyer des données.</p>
+
+---
+
+## Comment ?
+
+<p class="fragment">Différement suivant le <strong>SGBD</strong><br /><br />
+Système de Gestion de Base de Données<br />
+(DBMS: DataBase Management System)</p>
 
 --
 
 ![image](/slides/S04E05-slides-db/img/sql-vs-nosql.png)
-
---
-
-#### Données organisés par graph
-
-![image](/slides/S04E05-slides-db/img/graph.png)
 
 --
 
@@ -52,25 +63,56 @@ MySQL, SQL, Adminer, PDO
 
 --
 
+### SGBD NoSQL 
+
+<p>Les données sont stockés sous forme de collection qui sont des ensembles de documents.</p>
+Exemples : Cassandra, Redis ou MongoDB
+
+--
+
 #### Données organisées par relations
 
 ![image](/slides/S04E05-slides-db/img/article-sql.png)
 
+--
+
+### SGBDR SQL 
+
+<strong>RDBMS (Relationnal DataBase Management System)</strong>
+PostgreSQL, SQLite, Microsoft SQL Server, Oracle
+
 
 ---
 
-
 ## MySQL
 
-<p>Système de gestion de bases de données relationnelles</p>
-
---
-
 <ul>
+	<li>Système de gestion de bases de données relationnelles</li>
 	<li>SGBD Open Source</li>
 	<li>Langage : SQL</li>
 	<li>Interface web : Adminer (ou PhpMyAdmin)</li>
 	<li>Librairie PHP : PDO</li>
+</ul>
+
+--
+
+## Concrètement
+
+<ul>
+    <li>un serveur contient des bases</li>
+    <li>une bases contient des tables</li>
+    <li>une table est composée de champs (colonnes)<br /></li>
+    <li>une table contient des enregistrements (lignes)</li>
+</ul>
+
+--
+
+## Contraintes
+
+<ul class="fragment">
+    <li>Chaque ligne doit être unique</li>
+    <li>Et possède un identifiant</li>
+    <li>Pas de répétitions</li>
 </ul>
 
 
@@ -78,7 +120,7 @@ MySQL, SQL, Adminer, PDO
 
 ## SQL
 
-<p>Langage de communication</p>
+<p>Langage de communication avec la base de données</p>
 
 --
 
@@ -104,102 +146,6 @@ MySQL, SQL, Adminer, PDO
 	<small><code>[GRANT, REVOKE]</code></small>
 </li>
 </ul>
-
----
-
-## Concrètement, une base de données ça ressemble à quoi ?
-
----
-
-## Une structure de données
-
-<p>Par exemple pour stocker des profs O'Clock </p>
-<table class="small" class="fragment">
-    <thead>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Email</th>
-        <th>Ville</th>
-    </thead>
-</table>
-
---
-
-## Et les données dedans !
-
-<table class="small">
-    <thead>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Email</th>
-        <th>Ville</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Copin</td>
-            <td>Lucie</td>
-            <td>lucie@oclock.io</td>
-            <td>Bordeaux</td>
-        </tr>
-        <tr>
-            <td>Spagnolo</td>
-            <td>Dario</td>
-            <td>dario@oclock.io</td>
-            <td>Colombes</td>
-        </tr>
-        <tr>
-            <td>Vasse</td>
-            <td>Maxime</td>
-            <td>maxime@oclock.io</td>
-            <td>Bourg-en-Bresse</td>
-        </tr>
-    </tbody>
-</table>
-
---
-
-## Contraintes
-
-<ul class="fragment">
-    <li>Chaque ligne doit être unique</li>
-    <li>Et possède un identifiant</li>
-    <li>Pas de répétitions</li>
-</ul>
-
---
-
-<table class="small">
-    <thead>
-        <th>ID</th>
-        <th>Nom</th>
-        <th>Prenom</th>
-        <th>Email</th>
-        <th>Ville</th>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Copin</td>
-            <td>Lucie</td>
-            <td>lucie@oclock.io</td>
-            <td>Bordeaux</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Spagnolo</td>
-            <td>Dario</td>
-            <td>dario@oclock.io</td>
-            <td>Colombes</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Vasse</td>
-            <td>Maxime</td>
-            <td>maxime@oclock.io</td>
-            <td>Bourg-en-Bresse</td>
-        </tr>
-    </tbody>
-</table>
 
 ---
 
