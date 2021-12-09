@@ -41,7 +41,7 @@ MySQL, SQL, Adminer, PDO
 ## A quoi ça sert ?
 
 
-<p class="fragment">A stocker, organiser, gerer et renvoyer des données.</p>
+<p class="fragment">A stocker, organiser, gérer et renvoyer des données.</p>
 
 ---
 
@@ -79,7 +79,7 @@ Exemples : Cassandra, Redis ou MongoDB
 ### SGBDR SQL 
 
 <strong>RDBMS (Relationnal DataBase Management System)</strong>
-PostgreSQL, SQLite, Microsoft SQL Server, Oracle
+MySQL, PostgreSQL, SQLite, Microsoft SQL Server, Oracle
 
 
 ---
