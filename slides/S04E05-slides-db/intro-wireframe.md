@@ -2,12 +2,16 @@
 
 ---
 
-## C'est quoi ?
+## Waïeur- quoi ?
 
 C’est un schéma qui formalise, de façon simple, 
 l’agencement des blocs et leurs relations.
 
 Ce n’est pas une maquette graphique.
+
+---
+
+![image](/slides/S04E05-slides-db/img/wireframe-main.jpg)
 
 ---
 
